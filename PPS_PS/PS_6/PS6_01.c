@@ -10,7 +10,7 @@ int main()
     }
     for (int i = 4; i >= 0; i--)
     {
-        //
+       
         printf("rev=%d\n", arr[i]);
     }
 
