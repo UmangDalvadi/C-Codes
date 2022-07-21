@@ -37,6 +37,9 @@ int main()
   }
   printf("max even num: %d\n", max_even);
   printf("max odd num: %d\n", max_odd);
+ 
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
 
   return 0;
 }

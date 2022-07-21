@@ -20,6 +20,9 @@ int main()
     printf("enter the number : ");
     scanf("%d", &n);
     fibbo(n);
+ 
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
 
     return 0;
 }

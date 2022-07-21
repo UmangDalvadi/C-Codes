@@ -19,5 +19,10 @@ int main()
     scanf("%d", &num);
     printf("factorial of %d is : %d", num, fact(num));
 
+
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
+
+
     return 0;
 }

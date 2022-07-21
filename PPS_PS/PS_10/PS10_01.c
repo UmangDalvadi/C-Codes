@@ -12,5 +12,8 @@ int main()
 
     fclose(ptr);
 
+    printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
+
     return 0;
 }

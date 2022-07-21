@@ -19,6 +19,10 @@ void max(int a,int b)
     }
     else
     {
-        printf("ans: %d is maximum", b);
+        printf("ans: %d is maximum\n", b);
     }
+ 
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
+
 }

@@ -12,7 +12,7 @@ int main()
     }
 
     for (i = 0; i < n; i++)
-    {
+    { 
         for (j = i + 1; j < n; j++)
         {
             if (arr[i] > arr[j])
@@ -24,6 +24,9 @@ int main()
         }
         printf("%d ", arr[i]);
     }
+
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
 
     return 0;
 }

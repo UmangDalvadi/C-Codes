@@ -14,5 +14,10 @@ int main()
     scanf("%s", str);
     reverse(str);
 
+   
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
+
+
     return 0;
 }

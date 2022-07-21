@@ -13,6 +13,9 @@ int main()
        
         printf("rev=%d\n", arr[i]);
     }
+   
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
 
     return 0;
 }

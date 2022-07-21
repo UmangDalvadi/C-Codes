@@ -26,6 +26,10 @@ int main()
 
   printf("sum of all even numbers : %d\n", sum);
   printf("maximum : %d\n", m);
+   
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
+
 
   return 0;
 }

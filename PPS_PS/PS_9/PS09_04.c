@@ -21,5 +21,9 @@ int main()
 
     printf("\nsum of 6 elements of array is : %d", sum);
 
+  
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
+
     return 0;
 }

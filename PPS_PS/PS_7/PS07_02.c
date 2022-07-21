@@ -26,5 +26,9 @@ int main()
     printf("enter te number:");
     scanf("%d", &n);
     printf("sum of digits of there number is : %d", sum(n));
+  
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
     return 0;
+
 }

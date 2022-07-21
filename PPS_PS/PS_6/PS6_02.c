@@ -33,5 +33,9 @@ int main()
         }
     }
     printf("minimum : %d\n", min);
+  
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
+
     return 0;
 }

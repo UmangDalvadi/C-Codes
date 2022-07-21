@@ -13,7 +13,10 @@ int main()
     printf("enter the string : ");
     scanf("%s", str);
 
-    printf("The lenth of given string is : %d", lenthofstr(str));
+    printf("The lenth of given string is : %d\n", lenthofstr(str));
+ 
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
 
     return 0;
 }

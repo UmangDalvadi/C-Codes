@@ -20,5 +20,10 @@ int main()
     scanf("%d", &num);
     printf("sum of digits of number is : %d\n", sum(num));
 
+   
+     printf("\nName: Umang Dalvadi");
+    printf("\nEnrollment no:210210116020");
+
+
     return 0;
 }
