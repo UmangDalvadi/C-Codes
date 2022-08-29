@@ -36,11 +36,8 @@ int main()
     }
     swap(arr, 10);
 
-  
-     printf("\nName: Umang Dalvadi");
+    printf("\nName: Umang Dalvadi");
     printf("\nEnrollment no:210210116020");
-
-    
 
     return 0;
 }
