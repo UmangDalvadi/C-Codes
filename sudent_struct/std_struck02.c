@@ -65,15 +65,14 @@ void sort_s(struct student s[], struct student temp, int n)
 
     FILE *fp;
     fp = fopen("std_data.txt", "r");
-    fseek(fp, 0, SEEK_END);
-    int i = ftell(fp) / sizeof(struct student);
-    rewind(fp);
+
     for (int i = 0; i < n; i++)
     {
         fread(&s[i], sizeof(struct student), 1, fp);
     }
     fclose(fp);
     // printf("Name : %s\nDepartment : %s\nEnrollment : %d\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
+    
     for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)
