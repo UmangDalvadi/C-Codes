@@ -13,7 +13,7 @@ void display(struct student s[])
 {
     printf("====================================================\n");
     // for (int i = 0; i < n; i++)
-    
+
     // {
     //     printf("Name : %s\n", s[i].name);
     //     printf("Department : %s\n", s[i].dept);
@@ -24,15 +24,14 @@ void display(struct student s[])
 
     FILE *fp;
     fp = fopen("std_data.txt", "r");
-    struct student s1;
-    // int i = 0;///
-    while (fread(&s1, sizeof(struct student), 1, fp))
+    int i = 0;
+    while (fread(&s[i], sizeof(struct student), 1, fp))
     {
-        // if (i < 5)
-        // {
-            printf("%-20s,%-20s,%d,%d,%.2f", s1.name, s1.dept, s1.enroll, s1.sem, s1.spi);
-        //     i++;
-        // }
+        if (i < 5)
+        {
+            printf("Name : %s\nDepartment : %s\nEnrollment : %d\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
+            i++;
+        }
     }
     fclose(fp);
 }
@@ -59,7 +58,8 @@ int main()
         printf("Enter the SPI of student %d : ", i + 1);
         scanf("%f", &s[i].spi);
         printf("\n");
-        fprintf(fp, "name of student %d : %s \ndepartment of student %d : %s \nEnrollment of student %d : %d \nsemester of student %d : %d \nSPI of student %d : %.2f \n\n", i + 1, s[i].name, i + 1, s[i].dept, i + 1, s[i].enroll, i + 1, s[i].sem, i + 1, s[i].spi);
+        // fprintf(fp, "name of student %d : %s \ndepartment of student %d : %s \nEnrollment of student %d : %d \nsemester of student %d : %d \nSPI of student %d : %.2f \n\n", i + 1, s[i].name, i + 1, s[i].dept, i + 1, s[i].enroll, i + 1, s[i].sem, i + 1, s[i].spi);
+        fwrite(&s[i], sizeof(struct student), 1, fp);
     }
     fclose(fp);
     int n_exit;
