@@ -113,7 +113,7 @@ int main()
                     s[i].spi = temp;
                 }
             }
-        }
+        } 
         for (int i = 0; i < 5; i++)
         {
             printf("Name : %s ,SPI : %.3f\n", s[i].name, s[i].spi);

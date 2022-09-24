@@ -2,6 +2,7 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "PS5_02_iv.C": "cpp",
-        "string.h": "c"
+        "string.h": "c",
+        "typeinfo": "c"
     }
 }

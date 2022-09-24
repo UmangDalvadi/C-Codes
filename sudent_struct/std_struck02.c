@@ -13,7 +13,7 @@ void display(struct student s[])
 {
     printf("====================================================\n");
     // for (int i = 0; i < n; i++)
-    // jj
+    
     // {
     //     printf("Name : %s\n", s[i].name);
     //     printf("Department : %s\n", s[i].dept);

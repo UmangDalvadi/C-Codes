@@ -269,7 +269,7 @@ int main()
     //     printf(" sem of student %d is : %d\n", i + 1, s[i].sem);
     //     printf(" SPI of student %d is : %f\n", i + 1, s[i].spi);
     //     printf("\n");
-    // }hj
+    // }
 
     return 0;
 }
