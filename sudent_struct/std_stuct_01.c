@@ -118,7 +118,7 @@ int main()
         {
             printf("Name : %s ,SPI : %.3f\n", s[i].name, s[i].spi);
         }
-
+// sd
         break;
 
     case 4:
