@@ -72,7 +72,7 @@ void sort_s(struct student s[], struct student temp, int n)
     }
     fclose(fp);
     // printf("Name : %s\nDepartment : %s\nEnrollment : %d\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
-    
+
     for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)
