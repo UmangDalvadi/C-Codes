@@ -4,7 +4,7 @@ struct student
 {
     char name[20];
     char dept[50];
-    int enroll;
+    long long int enroll;
     int sem;
     float spi;
 };
@@ -13,7 +13,6 @@ void display(struct student s[])
 {
     printf("====================================================\n");
     // for (int i = 0; i < n; i++)
-
     // {
     //     printf("Name : %s\n", s[i].name);
     //     printf("Department : %s\n", s[i].dept);
@@ -27,7 +26,7 @@ void display(struct student s[])
     int i = 0;
     while (fread(&s[i], sizeof(struct student), 1, fp))
     {
-        printf("Name : %s\nDepartment : %s\nEnrollment : %d\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
+        printf("Name : %s\nDepartment : %s\nEnrollment : %lld\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
         i++;
     }
     fclose(fp);
@@ -39,7 +38,7 @@ void search(struct student s[])
 
     FILE *fp;
     fp = fopen("std_data.txt", "r");
-    int enroll;
+    long long int enroll;
     printf("Enter Enrollment number to search: ");
     scanf("%d", &enroll);
     printf("\n");
@@ -48,7 +47,7 @@ void search(struct student s[])
     {
         if (s[i].enroll == enroll)
         {
-            printf("Name : %s\nDepartment : %s\nEnrollment : %d\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
+            printf("Name : %s\nDepartment : %s\nEnrollment : %lld\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
             i++;
         }
         else
@@ -92,7 +91,7 @@ void sort_s(struct student s[], struct student temp, int n)
     fp = fopen("std_data.txt", "w");
     for (int i = 0; i < n; i++)
     {
-        printf("Name : %s\nDepartment : %s\nEnrollment : %d\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
+        printf("Name : %s\nDepartment : %s\nEnrollment : %lld\nSemster : %d\nSPI : %.2f\n\n", s[i].name, s[i].dept, s[i].enroll, s[i].sem, s[i].spi);
         fwrite(&s[i], sizeof(struct student), 1, fp);
     }
     fclose(fp);
@@ -108,7 +107,7 @@ void edit(struct student s[])
 
     int enroll;
     printf("Enter Enrollment number to edit: ");
-    scanf("%d", &enroll);
+    scanf("%lld", &enroll);
     printf("\n");
     int i = 0;
     while (fread(&s[i], sizeof(struct student), 1, fp))
@@ -121,7 +120,7 @@ void edit(struct student s[])
             printf("Enter new department : ");
             scanf("%s", &s[i].dept);
             printf("Enter new Enrollment : ");
-            scanf("%d", &s[i].enroll);
+            scanf("%lld", &s[i].enroll);
             printf("Enter new semester : ");
             scanf("%d", &s[i].sem);
             printf("Enter new SPI : ");
@@ -159,7 +158,7 @@ void delete (struct student s[])
 
     int enroll;
     printf("Enter Enrollment number to delete: ");
-    scanf("%d", &enroll);
+    scanf("%lld", &enroll);
     printf("\n");
     int i = 0;
     while (fread(&s[i], sizeof(struct student), 1, fp))
@@ -205,7 +204,7 @@ int main()
         printf("Enter the department of student %d : ", i + 1);
         scanf("%s", &s[i].dept);
         printf("Enter the Enrollment of student %d : ", i + 1);
-        scanf("%d", &s[i].enroll);
+        scanf("%lld", &s[i].enroll);
         printf("Enter the semester of student %d : ", i + 1);
         scanf("%d", &s[i].sem);
         printf("Enter the SPI of student %d : ", i + 1);
