@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "stdlib.h": "c",
-        "CLONE.C": "cpp"
+        "CLONE.C": "cpp",
+        "iomanip": "cpp"
     },
     "sqltools.connections": [
         {
